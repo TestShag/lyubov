@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- Здесь мы гооврим о том, что дальше будет html разметка -->
+<html>
+  <!-- Самый главный тег на странице -->
+  <head>
+    <!-- системный тег -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Урок №3. Списки.</title>
+
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <ul class="menu">
+          <li>
+            <a href="index.html">Главная</a>
+          </li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="about.html">Обо мне</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="slider">
+          <!-- Slider main container -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/slider.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slider.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slider.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="img-holder">
+          <h2>ТОП 3 мультика</h2>
+          <div class="img-box">
+            <img src="img/1.jpg" alt="" />
+            <img src="img/2.jpg" alt="" />
+            <img src="img/3.jpg" alt="" />
+          </div>
+        </div>
+
+        <div id="posts" class="posts">
+          <h2>Последние посты</h2>
+          <div class="post">
+            <img src="img/1.jpg" alt="" />
+            <div>
+              <h3>Заголовок</h3>
+              <p>Описание поста</p>
+              <a href="post-1.html">подробнее</a>
+            </div>
+          </div>
+          <div class="post">
+            <img src="img/2.jpg" alt="" />
+            <div>
+              <h3>Заголовок</h3>
+              <p>Описание поста</p>
+              <a href="">подробнее</a>
+            </div>
+          </div>
+          <div class="post">
+            <img src="img/3.jpg" alt="" />
+            <div>
+              <h3>Заголовок</h3>
+              <p>Описание поста</p>
+              <a href="">подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="logo"><a href="">Logo</a></div>
+          <div class="menu">
+            <ul>
+              <li>Главная</li>
+
+              <li>
+                Блог
+                <ul>
+                  <li>post1</li>
+                  <li>post1</li>
+                </ul>
+              </li>
+
+              <li>Об мне</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-text footer-about">
+            <h2>Обо мне</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo
+              nec ultrices dui sapien eget mi proin.
+            </p>
+          </div>
+          <div class="footer-text">
+            <h2>Социальные сети</h2>
+            <ul class="social-list">
+              <li><a href="instagram.com">inst</a></li>
+              <li><a href="youtube.com">youtube</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {});
+    </script>
+  </body>
+</html>
